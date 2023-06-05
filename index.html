@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>belajar hmtl & css</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+
+
+    <div class="section-menu">
+        <div class="container">
+            <ul>
+                <li><a href="#header">Profil Singkat</a></li>
+                <li><a href="#">Biodata</a></li>
+                <li><a href="">Riwayat Pendidikan</a></li>
+                <li><a href="">Hobi</a></li>
+                <li><a href="">Kontak</a></li>
+                <li><a href="pages/about.html">about</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+
     <!-- h1 adalah heading -->
-    <h1>Hello World!</h1>
-    <hr>
-    <ul>
-        <li><a href="">Profil Singkat</a></li>
-        <li><a href="">Biodata</a></li>
-        <li><a href="">Riwayat Pendidikan</a></li>
-        <li><a href="">Hobi</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="pages/about.html">about</a></li>
-    </ul>
+    <div class="section section-header" id="header">
+        <div class="container">
+            <div class="profile-content">
+                <h1 class="title-h1">Hello World!</h1>
+                <hr>             
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- <ol>
         <li><a href="">Profil Singkat</a></li>
@@ -28,45 +49,78 @@
         <li><a href="">Kontak</a></li>
     </ol> -->
 
-    <h2>Profil Singkat</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, asperiores consequatur? Placeat ad, eligendi quis odio </p>
-    <img src="images/avataaars.png" alt="images profil" width="200px">
 
-    <h2>Biodata</h2>
-
-    <table>
-        <tr>
-            <th>nama</th>
-            <th>tempat, tanggal lahir</th>
-            <th>hobi</th>
-        </tr>
-        <tr>
-            <td>rivaldy</td>
-            <td>jakarta, 1/3/01</td>
-            <td>jogging</td>
-        </tr>
-    </table>
-
-    <h2>Kontak</h2>
-
-    <p>
-        jl. cemara asri 2<br>
-        tangerang selatan<br>
-        15154
-    </p>
-
-    <form>
-        <h1>mari berkolaborasi</h1>
-        <br><br>
-        <label>Nama</label><br>
-        <input type="text" placeholder="nama lengkap anda">
-        <label>Nama</label><br>
-        <input type="text" placeholder="nama lengkap anda">
-        <label>Nama</label><br>
-        <input type="text" placeholder="nama lengkap anda">
+    <div class=" section section-profile">
+        <div class="container">
+            <h2>Profil Singkat</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, asperiores </p>
+            <img src="images/avataaars.png" alt="images profil" width="200px">
+        </div>
+    </div>
 
 
-    </form>
+
+    <div class="section section-biodata">
+        <div class="container">
+            <h2>Biodata</h2>
+            <table>
+                <tr>
+                    <th>nama</th>
+                    <th>tempat, tanggal lahir</th>
+                    <th>hobi</th>
+                </tr>
+                <tr>
+                    <td>rivaldy</td>
+                    <td>jakarta, 1/3/01</td>
+                    <td>jogging</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="section section-kontak">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>
+                jl. cemara asri 2<br>
+                tangerang selatan<br>
+                15154
+            </p>
+        </div>
+
+    </div>
+
+
+
+            <div class="section-form">
+                <div class="container">
+                    <div class="form-contact">
+                        <form>
+                            <h1>mari berkolaborasi</h1>
+                            <br><br>
+                            <label>Nama</label><br>
+                            <input type="text" placeholder="nama lengkap anda">
+    
+                            <label>Nama</label><br>
+                            <input type="text" placeholder="nama lengkap anda">
+    
+                            <label>Nama</label><br>
+                            <input type="text" placeholder="nama lengkap anda">
+
+                            <br><br>
+                            <input type="button" value="submit" class="button-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-copyright">
+                <div class="container">
+                    <p>copyright</p>
+                </div>
+            </div>
+
 
 
 
@@ -77,4 +131,5 @@
 
 
 </body>
+
 </html>
