@@ -4,13 +4,31 @@ body{
     margin: 0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul,hr{
     margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
 }
 
 .container{
@@ -24,60 +42,52 @@ ul,hr{
 }
 
 
-.sectiion-header{
+.section-header{
     background: #dedede;
+    padding-top: 200px;
 }
 
 .section-menu{
     background: #000;
     position: fixed;
     width: 100%;
-    opacity: 0,9;
+    opacity: 0.8;
 }
 
 .section-menu ul{
     display: flex;
-    margin-left: -50px;
-}
+    margin-left: -50px; 
+ }
 
-.section-menu ul li{
+ .section-menu ul li{
     list-style: none;
-    margin: 0px 10px;
-}
+    margin: 0px 10px; 
+ }
 
-.section-profile{
+ .section-profile{
     background: #dedede;
     text-align: center;
-} 
+}
 
 .section-biodata{
-    background: white;
+    background: #666;
     text-align: center;
 }
 
-.section-kontak{
+.section-contact{
     background: #000;
-    color: white;
+    color: #fff;
     text-align: center;
 }
 
 .section-form{
-    background: white;
-}
-
-table{
-    width: 100%;
-}
-
-table,th,td{
-    border: 1px solid #000;
-    border-collapse: collapse;
-    padding: 10px;
+    background: #dedede;
 }
 
 .form-contact{
     width: 500px;
 }
+
 
 input,textarea,button{
     width: 100%;
@@ -95,3 +105,52 @@ input,textarea,button{
 .button-submit:hover{
     background: rgba(1,1,190);
 }
+
+.skill{
+    padding: 80px 0px;
+}
+
+
+.skill-box-wrap{
+    display: flex;
+    gap: 30px;
+}
+
+.skill-box{
+    width: 25%;
+}
+
+
+/* responsive */
+
+
+@media (max-width: 1200px) {
+    .skill-box-wrap{
+        background: #666
+    }
+}
+
+
+@media (max-width: 992px) {
+    .skill-box-wrap {
+      flex-wrap: wrap;
+    }
+
+    .skill-box{
+        width: 45%;
+    }
+
+    .skill-box-wrap{
+        background: #fff;
+    }
+
+
+
+    }
+
+    @media (max-width: 768px) {
+        .skill-box{
+            width: 100%;
+        }
+
+  }
